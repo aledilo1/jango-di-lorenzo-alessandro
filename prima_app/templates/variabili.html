@@ -7,6 +7,10 @@
     <title>variabili</title>
 </head>
 <body>
+{% extends "base.html"%}
+{%block title%}{{block.super}}|chi siamo{%endblock title%}
+{%block content%}
+{%endblock content%}
     <lo>
         <li>{{var1}}</li>
         <li>{{var2}}</li>

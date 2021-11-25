@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+{% extends "base.html"%}
+{%block title%}{{block.super}}|chi siamo{%endblock title%}
+{%block content%}
+{%endblock content%}
     cicla una sequenza usando <b>forloop.counter</b>
     <br/>
     {% for x in list2 %}

@@ -7,6 +7,10 @@
     <title>Welcome</title>
 </head>
 <body>
+{% extends "base.html"%}
+{%block title%}{{block.super}}|chi siamo{%endblock title%}
+{%block content%}
+{%endblock content%}
     <h1>welcome</h1>
 </body>
 </html>
