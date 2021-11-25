@@ -45,16 +45,19 @@
           prima_app
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="{% url 'prima_app:chi_siamo'%}">chi_siamo</a>
+            <a class="dropdown-item" href="{% url 'prima_app:homepage'%}">Homepage</a>
+              <a class="dropdown-item" href="{% url 'prima_app:index'%}">index</a>
+                <a class="dropdown-item" href="{% url 'prima_app:lista'%}">lista</a>
+                  <a class="dropdown-item" href="{% url 'prima_app:variabili'%}">variabili</a>
+                    <a class="dropdown-item" href="{% url 'prima_app:welcome'%}">welcome</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+          seconda_app
          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="{% url 'seconda_app:es_for'%}">es_for</a>
+            <a class="dropdown-item" href="{% url 'seconda_app:es_for'%}">es_for</a>
+              <a class="dropdown-item" href="{% url 'seconda_app:es_for'%}">es_for</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
       <li class="nav-item">
