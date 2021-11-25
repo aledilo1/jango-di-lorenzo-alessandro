@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-</head>
-<body>
 {% extends "base.html"%}
-{%block title%}{{block.super}}|chi siamo{%endblock title%}
+{%block title%}{{block.super}}|index{%endblock title%}
 {%block content%}
-{%endblock content%}
+
     <ol>
         <li><a href="{% url 'prima_app:homepage'%}">Home page benvenuto</a></li>
         <li><a href="{% url 'prima_app:welcome'%}">Welcome</a></li>
@@ -21,5 +12,4 @@
         <li><a href="{% url 'seconda_app:es_if'%}">es_if</a></li>
         <li><a href="{% url 'seconda_app:es_for'%}">es_for</a></li>
     </ol>
-</body>
-</html>
+    {%endblock content%}
