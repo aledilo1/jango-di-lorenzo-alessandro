@@ -7,8 +7,12 @@
     <title>chi siamo </title>
 </head>
 <body>
-    <h1>chi siamo </h1>
-   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus saepe dignissimos vel maiores aperiam rerum placeat ab, quod aliquid corporis sed consequatur aut molestiae dolor at ipsum natus ratione quidem!
-</p>
+{% extends "base.html"%}
+{%block title%}{{block.super}}|chi siamo{%endblock title%}
+{%block content%}
+{%endblock content%}
+<h1>chi siamo </h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus saepe dignissimos vel maiores aperiam rerum placeat ab, quod aliquid corporis sed consequatur aut molestiae dolor at ipsum natus ratione quidem!</p>
+
 </body>
 </html>
