@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.shortcuts import render
 
 def view_b(request):
@@ -13,3 +14,10 @@ def view_c(request):
            'Nicola Spina':[("Matematica",7.5,2),("Italiano",6,2),("Inglese",4,3),("Storia",8.5,2),("Geografia",8,2)]}
     }
     return render(request, "view_c.html", context)
+
+def materie_list(request):
+    context={
+        'materie' : ['Matematica','Italiano','Inglese','Storia','Geografia']
+    }
+    response=JsonResponse(context)
+    return response
